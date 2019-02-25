@@ -23,7 +23,9 @@ Guid From: [allenking1028](https://github.com/allenking1028/ss/issues/1)
 
 4：`bash bbr.sh start`
 
-5：`wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh && chmod +x shadowsocksR.sh`
+5：`wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log`
 
 6：`./shadowsocksR.sh`
 
@@ -33,11 +35,11 @@ Guid From: [allenking1028](https://github.com/allenking1028/ss/issues/1)
 
 其他一路回车（也可自行选择混淆 协议）
 
-在最后出现红底数据以后
+安装完后会有红色提示出现，复制内容用作后面设置的参考
 
 ## 测试实例速度
 [ipip测速网址](https://www.ipip.net/)
-实用工具 -> TraceRoute -> IPv4 边上的选框选一个和你近的站点， 另一边选你生成的IP，测之。ping 太高删掉重建
+实用工具 -> TraceRoute -> IPv4 边上的选框选一个和你近的站点， 另一边选你生成的IP，测之。ping 太高删掉重建！
 
 ## 设置防火墙
 谷歌云 -> VPC网络 -> 防火墙规则 -> default-allow-https/http -> 协议和端口 选择 '允许全部' 
