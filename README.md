@@ -5,11 +5,11 @@ Guid From: [allenking1028](https://github.com/allenking1028/ss/issues/1)
 
 1-4是安装BBR 加速器部分, 不设置速度也很快，可以不跑。直接从第5步开始
 
-1：`sudo -i`
+1. `sudo -i`
 
 (最前面显示root@xxxx)
 
-2：`wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/bbr.sh && bash bbr.sh install`
+1. `wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/bbr.sh && bash bbr.sh install`
 
 蓝底窗口按TAB键选NO
 
@@ -17,28 +17,20 @@ Guid From: [allenking1028](https://github.com/allenking1028/ss/issues/1)
 
 这里会断开连接，大家可以关掉窗口再重新打开或几秒钟后在界面随便按几个字母 便会提示重新连接。
 
-3：`sudo -i`
+1. `sudo -i`
 
 (最前面显示root@xxxx)
 
-4：`bash bbr.sh start`
+1. `bash bbr.sh start`
 
-5：
-`wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh`
+1. type command as below:
 
-`chmod +x shadowsocks-all.sh`
+  + `wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh`
+  + `chmod +x shadowsocks-all.sh`
+  + `./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log`
+  + `./shadowsocks-all.sh`
 
-`./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log`
-
-6：`./shadowsocks-all.sh`
-
-输入shadowsocks 密码
-
-输入端口号
-
-其他一路回车（也可自行选择混淆 协议）
-
-安装完后会有红色提示出现，复制内容用作后面设置的参考
+输入shadowsocks 密码, 输入端口号,其他一路回车(也可自行选择混淆 协议).安装完后会有红色提示出现, 复制内容用作后面设置的参考.
 
 ## 测试实例速度
 [ipip测速网址](https://www.ipip.net/)
