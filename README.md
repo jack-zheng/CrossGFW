@@ -23,11 +23,12 @@ Guid From: [allenking1028](https://github.com/allenking1028/ss/issues/1)
 
 4：`bash bbr.sh start`
 
-5：`wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-chmod +x shadowsocks-all.sh
-./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log`
+5：
+`wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh`
+`chmod +x shadowsocks-all.sh`
+`./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log`
 
-6：`./shadowsocksR.sh`
+6：`./shadowsocks-all.sh`
 
 输入shadowsocks 密码
 
