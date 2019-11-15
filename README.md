@@ -7,14 +7,16 @@
 1. run command to install bbr and restart VPS:
     + `sudo -i`
     + `wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh`
-1. reboot VPS to let bbr works, `sudo reboot`
-1. `sudo -i` and `sysctl net.ipv4.tcp_available_congestion_control` to check if bbr installed
-    + normally value should be `net.ipv4.tcp_available_congestion_control = bbr cubic reno` or `net.ipv4.tcp_available_congestion_control = reno cubic bbr`
+    + `sudo reboot`
+1. to check if bbr installed, normally value should be `net.ipv4.tcp_available_congestion_control = bbr cubic reno` or `net.ipv4.tcp_available_congestion_control = reno cubic bbr`
+    +`sysctl net.ipv4.tcp_available_congestion_control`
 1. type command as below:
     + `sudo -i`
     + `wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh`
     + `chmod +x shadowsocks-all.sh`
     + `./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log`
+    
+check if shadowsocks is started: `systemctl status shadowsocks-libev`
 
 输入shadowsocks 密码, 输入端口号,其他一路回车(也可自行选择混淆 协议).安装完后会有红色提示出现, 复制内容用作后面设置的参考.
 
