@@ -9,7 +9,7 @@
     + `wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh`
     + `sudo reboot`
 1. to check if bbr installed, normally value should be `net.ipv4.tcp_available_congestion_control = bbr cubic reno` or `net.ipv4.tcp_available_congestion_control = reno cubic bbr`
-    +`sysctl net.ipv4.tcp_available_congestion_control`
+    + `sysctl net.ipv4.tcp_available_congestion_control`
 1. type command as below:
     + `sudo -i`
     + `wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh`
