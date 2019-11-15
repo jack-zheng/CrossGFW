@@ -18,6 +18,8 @@
     
 check if shadowsocks is started: `systemctl status shadowsocks-libev`
 
+如果你用的是其他版本的 shadowsocks 包，比如 go, python 之类的，上面那个就不 work 了， `ps -ef | grep shadow` 检查一下你用的什么版本
+
 输入shadowsocks 密码, 输入端口号,其他一路回车(也可自行选择混淆 协议).安装完后会有红色提示出现, 复制内容用作后面设置的参考.
 
 ## 测试实例速度
