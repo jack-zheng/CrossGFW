@@ -15,7 +15,7 @@ sudo reboot
 Check if bbr installed
 
 ```bash
-sysctl net.ipv4.tcp_available_congestion_control
+sudo sysctl net.ipv4.tcp_available_congestion_control
 ```
 
 结果包含 bbr 字段则表示安装成功
